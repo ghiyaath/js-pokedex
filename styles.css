@@ -1,0 +1,101 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head-1 {
+    background-color: aqua;
+    padding: 1%;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: crimson;
+    font-size: 70px;
+    -webkit-text-stroke: 4.2px #3761a8;
+}
+
+.body{
+    background-image: url(./pokemon\ pikkachu.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.search-div {
+    width: 100%;
+    height: 20vh;
+    padding: 1%;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pokemon-info {
+    display: flex;
+    background-color:white;
+    
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.result img {
+    width: 12%;
+    height: 55%;
+
+}
+
+.result p {
+    font-size: 25px;
+}
+
+.heading {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+    background: grey;
+    text-align: center;
+    text-decoration: turquoise;
+    -webkit-text-stroke: 2.2px #3761a8;
+    text-transform: uppercase;
+}
+
+.pokemon-list {
+}
+
+button{
+    background: #eeff04;
+    box-shadow: 0 8px 32px 0 rgb(255, 0, 234);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 20px;
+    border: 8px solid rgba(255, 0, 0, 0.18);
+    padding: 35px 25px;
+    margin: 20px;
+    transition: all 0.2s ease;
+    font: bold;
+    font-size: 15px;
+
+  }
+  
+.buttons{
+    display: flex ;
+    justify-content: space-around;
+    padding-top: 5%;
+  }
+
+
+
