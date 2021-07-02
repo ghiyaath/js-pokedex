@@ -20,7 +20,9 @@ function getPokemonList(url) {
         container.innerHTML += `<button onclick="getPokemonInfo('${btn.url}')">${btn.name}</button>`;
       });
       // Add a next pokemon button
-      container.innerHTML += `<br><br><button onclick="getPokemonList('${data.next}')">Next</button>`;
+      container.innerHTML += `<br><br><button onclick="getPokemonList('${data.previous}')">Previous</button>`;
+
+      container.innerHTML += `<button onclick="getPokemonList('${data.next}')">Next</button>`;
     });
 }
 
@@ -36,18 +38,15 @@ function getPokemonInfo(url) {
       console.log(data);
       // Write data to pokemon information container
       document.querySelector(".pokemon-info").innerHTML = `
-      <div class="result">
-        <p>${data.name}</p>
-        <img src="${data.sprites.front_default} ">
-        <div class="abilities"></div>
-      </div>`;
-
-      let abilities = document.querySelector(".abilities");
-      data.abilities.forEach(ability => {
-        abilities.innerHTML += `
-        <p>${ability.ability.name}</p>
-        `
-      });
+        <img src="${data.sprites.front_default} ">`;
+      document.querySelector(".name").innerHTML = `
+        <p>Name: ${data.name}</p>`;
+        document.querySelector(".abilities").innerHTML = `
+        <p>Abilities: ${data.abilities[0].ability.name}</p>`;
+        document.querySelector(".height").innerHTML = `
+        <p>Height: ${data.height}</p>`;
+        document.querySelector(".weight").innerHTML = `
+        <p>Weight: ${data.weight}</p>`;
     });
 }
 function getPokemonAbilities(url) {

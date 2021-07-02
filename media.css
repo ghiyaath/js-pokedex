@@ -1,0 +1,45 @@
+
+@media only screen and (max-width: 600px) {
+    .head-1 {
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 25px;
+        padding: 20px 0;
+    }
+
+    .info {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pokemon-info {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .pokemon-info img {
+        width: 100%;
+    }
+
+    .poke-description {
+        text-align: center;
+    }
+
+    .name, .abilities, .height, .weight 
+    {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin: 20px auto;
+    }
+
+    .pokemon-list {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+}
